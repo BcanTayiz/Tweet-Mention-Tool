@@ -1,6 +1,5 @@
 import pandas as pd     
 import numpy as np
-import psutil
 from googletrans import Translator
 import streamlit as st
 from chatterbot import ChatBot
