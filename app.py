@@ -3,8 +3,7 @@ import numpy as np
 from googletrans import Translator
 import streamlit as st
 from chatterbot import ChatBot
-from chatterbot.trainers import ListTrainer
-import sys
+
 
 # maximumMemory = sys.maxsize * 0.8
 # print(maximumMemory)
@@ -69,7 +68,7 @@ text_result = st.text_area("You can enter you tweet or text here",height=150)
 
 
 if text_result:
-    for i in range(5):
+    for i in range(100):
         try:
             if translator.detect(text_result).lang == "en":
                 text = text_result
